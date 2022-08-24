@@ -1,0 +1,13 @@
+.main{
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    background-color: #ffae00;
+    margin: 20px auto;
+}
+.main h1{
+    color: #0088ff;
+}
+:hover p{
+    color: #ff7b7b;
+}

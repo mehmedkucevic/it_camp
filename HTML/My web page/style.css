@@ -39,12 +39,18 @@ h3{
   }
   .bottom-left {
     position: absolute;
-    bottom: -70px;
-    left: 70px;}
+    bottom: -147px;
+    left: 170px;}
     
     .bottom-left h2{
       
       color: #ffee00;
+    
+    }
+    .bottom-left:hover h2{
+      color: #8b8b8b;
+      transition: all 0.5s ease-in-out;
+      
     }
     .main h1{
       color: #929292;
@@ -54,4 +60,34 @@ h3{
       text-align: justify;
       text-align-last:center ;
     }
-    
+    .number h1{
+     position: absolute;
+     bottom: -260px;
+     left: 20px;
+     
+    }
+    .number{
+      padding: 20px;
+    }
+    .paragraf{
+      width: 1000px;
+      margin: 1px auto;
+      padding: 10px;
+
+      /* position: absolute; */
+      /* right: 112px; */
+      /* bottom: -325px; */
+    }
+    .second{
+      position: absolute;
+      left: 300px;
+      bottom: -147;
+    }
+    .second h2{
+      color: #ffee00;
+      
+    }
+    .second:hover h2{
+      color: #8b8b8b;
+      transition: all 0.5s ease-in-out;
+    }

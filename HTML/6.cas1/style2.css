@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.div1{
+    background-color: aquamarine;
+    width: 300px;
+    height: 200px;
+    /* overflow:visible; defoult vrednost */
+    /* overflow:hidden */
+    /* overflow: scroll; */
+    /* overflow: auto; */
+    overflow: auto;
+}
+
+.div2{
+    background-color: brown;
+    width: 300px;
+    height: 250 px;
+}
+
+.div2 p {
+    /* font-size: larger; */
+    font-size: 22px;
+    /* text-align: right; */
+    text-align: justify;
+    text-align-last: right;
+
+}
+
+
+
+

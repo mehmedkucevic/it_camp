@@ -1,0 +1,43 @@
+.main{
+border-radius: 15px;
+    width: 400px;
+    height: 600px;
+    margin: 15px;
+    background-color: #d1b593;
+    display:inline-block ;
+    padding: 20px;
+}
+.main img{
+    height: 200px;
+    width: 400px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.main h1{
+    text-align: center;
+    /* text-transform: uppercase; */
+    /* text-transform: capitalize; */
+    /* text-transform:lowercase; */
+    text-transform: uppercase;
+margin: 25px;
+    font-size: 28px;
+}
+.main h3{
+    text-align: center;
+    text-transform: capitalize;
+    margin: 15px;
+}
+.main p{
+    margin:10px;
+    text-align: justify;
+}
+
+.main img:hover{
+content: url(../2.cas/cvet-cvece.jpg);
+}
+
+.main p:hover{
+background-color: #f0f8ff;
+transition: all 1s ease-in-out;
+}    

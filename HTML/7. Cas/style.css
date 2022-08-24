@@ -1,0 +1,58 @@
+*{
+    margin: 10px;
+}
+
+.main{
+
+ width: 400px;
+ height: 300px;
+ background-color: greenyellow;
+ border: 3px solid black;
+ /* margin-top: ; */
+/* margin-bottom:  itd..; */
+/* ako imam ocetiri vrednosti za svostvo margin ili padding . Shvatanje cssa je sledece : */
+/* !. vrednost se odnosi na margi top */
+/* 2.vrednost se odnosi na margi right */
+/* 3.vrednost se odnosi na margi bottom */
+/* 4.vrednost se odnosi na margi left*/
+/* margin: 10px 20px 30px 40px; */
+/* vrednos odnosi na margin top i margin bottom */
+/* vrednost se odnsi na margin right i margin left */
+
+/* margin: 20px 40px; */
+/* padding:10px;    */
+padding: 7px 20px 7px;
+margin: 15px auto;
+border: 3px solid blueviolet;
+border-top-left-radius:10px ;
+border-top-right-radius:10px ;
+/* border-radius: 10px 20px 30px 40px; */
+/* margin: 0x 20px 0px; */
+/* border: 3px  double chocolate; */
+/* border: 3px dashed #5286e6; */
+/* border:3px dotted  #0F00FF; */
+box-shadow: 3px 3px 20px rgba(0,0,0,1);
+/* box-shadow: -3px -3px 20px rgba(0,0,0,1); ako zelimo da se efekat postigne na vrh i levu stranu */
+}
+
+p{
+    text-align: justify;
+    text-align-last: center;
+    text-indent: 25px;
+}
+
+button{
+padding: 20px;
+margin: 10px;
+}
+
+p:hover{
+    background-color: aqua;
+    color: blue;
+        
+}
+/* domaci zadatak 
+odradii karticu kao sa slike 
+glavni kotnenjer da ima sirinu 400px i visinu 600px 
+fotografija da zauzima treinu glavnog kontenjera
+nasloc je h1 i h3  */

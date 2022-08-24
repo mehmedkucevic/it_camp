@@ -1,0 +1,21 @@
+body{
+    background-color: aquamarine;
+}
+
+
+.main{
+    width: 500px;
+    height: 400px;
+    overflow: auto;
+    font-size: 20px;
+    background-color: #808080;
+
+    
+}
+.main h2{
+    color: brown;
+}
+.main p{
+    color: darkblue;
+    
+}

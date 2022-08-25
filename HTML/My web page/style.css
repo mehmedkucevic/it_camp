@@ -32,9 +32,17 @@ h3{
   left: 50%;
   transform: translate(-50%, -50%);}
   .centered h1{
+    margin:1px auto ;
+    font-size: 40px;
     color: #ffee00;
+
   }
   .centered h3{
+    margin: 1px auto;
+    position: absolute;
+    top: 60px;
+    right: 11px;
+    font-size:17px ;
     color: #ffee00;
   }
   .bottom-left {
@@ -78,36 +86,85 @@ h3{
       /* right: 112px; */
       /* bottom: -325px; */
     }
-    .second{
-      position: absolute;
-      left: 300px;
-      bottom: -147;
-    }
-    .second h2{
-      color: #ffee00;
-      
-    }
+    
     .second:hover h2{
       color: #8b8b8b;
       transition: all 0.5s ease-in-out;
     }
-    .button button{
+    .dugme button{
       background-color: #353535;
       border: none;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       font-size: 30px;
     }
-    .button2 button{
+    .dugme2 button{
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       font-size: 30px;
       background-color: #353535;
       border: none;
     }
-    .button button:hover{
+    .dugme button:hover{
       color: #ffee00;
-      transition: all 1s ease-in-out;
+      transition: all 0.5s ease-in-out;
     }
-    .button2 button:hover{
+    .dugme2 button:hover{
       color: #ffee00;
-      transition: all 1s ease-in-out;
+      transition: all 0.5s ease-in-out;
+    }
+    .dugme2{
+      position: absolute;
+      bottom: -150px;
+      left: 340px;
+    }
+    .dugme{
+      lighting-color: #ffffff;
+      position: absolute;
+      bottom: -150px;
+      left: 170px;
+    }
+
+    .container {
+      position:absolute;
+    left:799px;
+      top: 130px;
+      width: 510px;
+      
+    }
+    
+    .image {
+      
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color:#ffee00;
+      border-radius: 20px;
+    }
+    
+    .container:hover .overlay {
+      opacity: 1;
+    }
+    
+    .text {
+      
+      color:#8b8b8b;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
     }

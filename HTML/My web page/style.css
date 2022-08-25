@@ -103,4 +103,11 @@ h3{
       background-color: #353535;
       border: none;
     }
-    
+    .button button:hover{
+      color: #ffee00;
+      transition: all 1s ease-in-out;
+    }
+    .button2 button:hover{
+      color: #ffee00;
+      transition: all 1s ease-in-out;
+    }

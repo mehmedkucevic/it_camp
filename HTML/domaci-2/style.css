@@ -1,0 +1,48 @@
+body{
+    font-family:'Lobster', cursive ;
+    
+}
+.main{
+    margin: 30px auto;
+    width: 400px;
+    height: 600px;
+    background-color: #b1b6ff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: -2px -2px 300px;
+}
+.main img{
+    width: 400px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit:fill;
+}
+.main img:hover{
+    content:url(./02.jpg)
+}
+    .main h2{
+        text-align: left;
+        padding-left: 20px;
+        
+        /* padding-top: -20px; */
+
+
+    }
+    .main h2:nth-of-type(1){
+font-size: 20px;
+position: relative;
+top: 16px;
+    }
+    .main h2:nth-of-type(2){
+padding-bottom: 36px;
+}
+
+    #icon{
+        
+        padding: 0 10px 10px 20px;
+    }
+    
+    
+
+

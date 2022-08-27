@@ -10,6 +10,7 @@ body{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     box-shadow: -2px -2px 300px;
+    text-align: justify;
 }
 .main img{
     width: 400px;
@@ -35,14 +36,20 @@ position: relative;
 top: 16px;
     }
     .main h2:nth-of-type(2){
-padding-bottom: 36px;
+padding-bottom: 20px;
 }
 
     #icon{
         
-        padding: 0 10px 10px 20px;
+        padding: 0 10px 5px 20px;
     }
-    
+    .text{
+        font-size: 18px;
+    }
+    .main p{
+        font-size: 18px;
+        margin-left: 20px;
+    }
     
 
 

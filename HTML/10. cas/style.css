@@ -1,0 +1,50 @@
+body{
+    font-family: 'Kalam', cursive;  
+}
+
+.main{
+    background-color: #00744d;
+    margin: 20px auto;
+    width: 400px;
+    height: 500px;
+    padding: 15px;
+    color:#ffffff;
+}
+.main h1{
+    text-transform: capitalize;
+    text-align: center;
+
+}
+.main p{
+    text-align-last: center;
+    text-align: justify;
+    text-indent: 15px;
+
+}
+.text-for-icons{
+    padding-left: 5px;
+}
+#icon{
+font-size: 25px;
+color: #7700ff;
+
+border-radius: 10px;
+}
+#motor{
+    font-size: 25px;
+color: #7700ff;
+
+border-radius: 10px;
+
+}
+#train{
+    font-size: 25px;
+color: #7700ff;
+
+border-radius: 10px;
+}
+/* #icon:nth-of-type(2){ */
+    /* color: black; */
+    /* background-color: #7700ff; */
+    /* ovo se radi kada vise stvari ima klasu ili id isti i onda hocemo da promenimo jednu stvar a ne sve od jednom */
+/* } */

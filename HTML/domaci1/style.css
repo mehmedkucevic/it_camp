@@ -19,9 +19,7 @@ body{
     border-top-right-radius: 20px;
     object-fit:fill;
 }
-.main img:hover{
-    content:url(../domaci-2/02.jpg)
-}
+
     .main h2{
         text-align: left;
         padding-left: 20px;
@@ -38,16 +36,19 @@ top: 16px;
     .main h2:nth-of-type(2){
 padding-bottom: 20px;
 }
-
-    #icon{
-        
-        padding: 0 10px 1px 20px;
-    }
-    .text{
-        font-size: 18px;
-    }
-    .main p{
-        font-size: 18px;
-        margin-left: 20px;
-        
-    }
+.picture img{
+    width: 40px;
+    height: 40px;
+    
+}
+#phone{
+    position: relative;
+    top: 224px;
+    left: 20px;
+    
+    
+}
+#room{
+    position:relative;
+    left: -20px; 
+}

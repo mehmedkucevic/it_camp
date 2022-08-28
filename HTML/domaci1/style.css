@@ -1,0 +1,53 @@
+body{
+    font-family:'Lobster', cursive ;
+    
+}
+.main{
+    margin: 30px auto;
+    width: 400px;
+    height: 600px;
+    background-color: #b1b6ff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: -2px -2px 300px;
+    text-align: justify;
+}
+.main img{
+    width: 400px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit:fill;
+}
+.main img:hover{
+    content:url(../domaci-2/02.jpg)
+}
+    .main h2{
+        text-align: left;
+        padding-left: 20px;
+        
+        /* padding-top: -20px; */
+
+
+    }
+    .main h2:nth-of-type(1){
+font-size: 20px;
+position: relative;
+top: 16px;
+    }
+    .main h2:nth-of-type(2){
+padding-bottom: 20px;
+}
+
+    #icon{
+        
+        padding: 0 10px 1px 20px;
+    }
+    .text{
+        font-size: 18px;
+    }
+    .main p{
+        font-size: 18px;
+        margin-left: 20px;
+        
+    }

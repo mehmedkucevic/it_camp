@@ -41,7 +41,7 @@ padding-bottom: 20px;
 
     #icon{
         
-        padding: 0 10px 5px 20px;
+        padding: 0 10px 1px 20px;
     }
     .text{
         font-size: 18px;
@@ -49,6 +49,7 @@ padding-bottom: 20px;
     .main p{
         font-size: 18px;
         margin-left: 20px;
+        
     }
     
 

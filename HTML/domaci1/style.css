@@ -44,11 +44,43 @@ padding-bottom: 20px;
 #phone{
     position: relative;
     top: 224px;
-    left: 20px;
+    left: 25px;
     
     
 }
 #room{
     position:relative;
-    left: -20px; 
+    top: -12px;
+    left: -18px; 
+}
+#bathroom{
+    position: relative;
+    top: 48px;
+    left:-64px;
+}
+#pool{
+    position: relative;
+    top: 108px;
+    left: -106px;;
+}
+#plus{
+    position: relative;
+
+    top: 168px;
+    left: -150px;
+}
+.text{
+    font-size: 20px;
+    position: relative;
+left: 42%;
+top: -296px;
+
+}
+.text p{
+    padding-bottom: 12px;
+}
+.text p:nth-of-type(5){
+    position: absolute;
+    top: 196px;
+    font-size: smaller;
 }

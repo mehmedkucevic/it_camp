@@ -1,0 +1,38 @@
+.box{
+    width: 100px;
+    height: 100px;
+    float:left;
+}
+.box1{
+    background-color: blueviolet;
+    /* float: left; */
+}
+
+.box2{
+    background-color: rgb(117, 248, 42);
+    /* float: left; */
+
+}
+.box3{
+    background-color: rgb(104, 81, 67);
+    /* clear: both; */
+    /* float: left; */
+}
+.box4{
+    background-color: rgb(255, 0, 0);
+    /* float: right; */
+     
+}
+.box5{
+    background-color: rgb(214, 226, 43);
+    clear: both;
+}
+.box6{
+    background-color: rgb(46, 16, 75);
+}
+.box7{
+    background-color: rgb(252, 166, 117);
+}
+.box8{
+    background-color: rgb(255, 172, 237);
+}

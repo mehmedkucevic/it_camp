@@ -16,4 +16,32 @@
   
   .links {
     display: inline-block;
+    margin-left: 40rem;
   }
+  .links a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #0026ff;
+    padding-right: 0.7rem;
+    text-transform: uppercase;
+    /* margin-left: 5rem; */
+    cursor: pointer;
+  }
+ 
+  .links a:hover{
+    padding: 0.5rem;
+    background-color: #7fffd4;
+    border-radius: 14px;
+      }
+      .links a:visited{
+        padding: 0.5rem;
+        background-color: #d9ff00;
+        border-radius: 14px;
+        color: #ff56f1;
+          }
+          .links a:active{
+            padding: 0.5rem;
+            background-color: #d9ff00;
+            border-radius: 14px;
+            color: #777777;
+              }

@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+img{
+    width: 50%;
+    height: 55vh;
+    margin-right: 1rem;
+    float: left;
+    /* float: right; */
+}
+.first{
+    width: 500px;
+    height:75vh;
+    background-color: rgba(196, 248, 248, 0.5);
+    clear: both;
+    float: left;
+
+}
+.second{
+    width: 500px;
+    height:70vh;
+    background-color: #753838;
+    clear: both;
+}

@@ -1,0 +1,31 @@
+.main{
+    width: 600px;
+    height:200vh ;
+    background-color: rgb(255, 251, 0);
+
+}   
+
+.box1{
+    height: 100px;
+width: 100px;
+background-color: rgb(206, 153, 255); 
+position: relative;
+top: 50px;
+left: 100px;
+}
+.box2{
+    height: 100px;
+width: 100px;
+background-color: brown;
+position: relative;
+left: 150px;
+z-index: 20;
+}
+.box3{
+    height: 100px;
+width: 100px;
+background-color: rgb(0, 60, 255);
+position: relative;
+top: -60px;
+left: 180px;
+}

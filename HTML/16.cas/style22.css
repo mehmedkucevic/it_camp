@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+   
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+background-color: rgb(127, 204, 127);
+}
+header{
+    text-transform: uppercase;
+    background-color: rgb(26, 83, 24);
+    
+    color: rgb(255, 255, 255);
+position: sticky;
+height:70px;
+
+}
+.main{
+    width: 100vh;
+    margin-left: 10rem;
+    margin-top: 7rem;
+    display: inline-block;
+
+}
+.list{
+    position: relative;
+    left: 50rem;
+    top: -10rem;
+    width: max-content;
+}
+
+#stranica{
+    color: antiquewhite;
+    float: right;
+    padding-right: 30px;
+    
+
+
+}
+footer{
+    position: relative;
+    bottom: 0px;
+    height: 100px;
+    color: blueviolet;
+}
+.text{
+    width: 90vh;
+    position: relative;
+    right: -35rem;
+    top: -28rem;
+    
+}
+header h1{
+    position: relative;
+    top: 20px;
+}

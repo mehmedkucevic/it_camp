@@ -62,12 +62,15 @@ header {
 .paragraf{
 position: relative;
 top: 8rem;  
+width: 358px;
+left: 16rem;
+color: rgba(100, 100, 111, 0.8);
 }
 .dugme{
   background-color: #fcfcfc;
   position: relative;
   right: -50rem;
-  box-shadow: 0px 1px 7px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   width: 350px;
   height: 323px;
   border-radius: 10px;
@@ -101,4 +104,8 @@ button:nth-of-type(1){
 }
 .dugme a{
   padding-left: 85px;
+}
+#novi{
+  text-decoration: none;
+  /* font-size: smaller; */
 }

@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main {
+  width: 75%;
+  height: 500px;
+  background-color: rgb(201, 172, 153);
+  display: flex;
+  /* horizontalno poravnanje */
+  justify-content: space-between;
+  /* justify-content: center; */
+  /* justify-content: end; */
+  /* justify-content: right; */
+  /* justify-content: left; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+
+  margin: 0 auto;
+
+  /* Vertikalno poravnanje */
+  align-items: center;
+  /* align-items: flex-end; */
+}
+
+
+.box2 {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(248, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

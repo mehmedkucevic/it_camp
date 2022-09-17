@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main {
+  margin: auto;
+  width: 75%;
+  height: 500px;
+  background-color: rgb(201, 172, 153);
+  display: flex;
+}
+/*  Pomocu svojstva flex-grow svjostvo zauzima se celokupna sirina parent kontenjnera  */
+/* Devinisanje sirine nekog cild elementa bi zapravo minimalnu sirinu tog elementa */
+.box1 {
+  flex-grow: 1;
+  flex-basis: 250px;
+  /* flex-shrink:3 ; */
+  height: 150px;
+  background-color: #ff0000;
+}
+.box2 {
+    /* flex-shrink:1 ; */
+  flex-grow: 1;
+  flex-basis: 250px;
+  height: 150px;
+  background-color: #00ccff;
+}
+.box3 {
+    /* flex-shrink:1 ; */
+  flex-grow: 1;
+  flex-basis: 250px;
+  height: 150px;
+  background-color: #15ff00;
+}

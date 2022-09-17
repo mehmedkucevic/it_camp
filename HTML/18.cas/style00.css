@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+header{
+    background-color:#0300ac;
+    color: #ffffff;
+    display: flex;
+justify-items:center;
+
+height: 70px;
+
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.box1{
+padding-top:0.5rem;
+padding-left: 10rem;
+    text-decoration: solid;
+    
+}
+
+.box2{
+    margin: auto;
+    margin-left: 24rem;
+    
+}
+.box2 a{
+    padding-right: 1.5rem;
+}
+li button{
+
+    border: #ffffff;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 15px;
+    margin-left: 5rem;
+}
+.main{
+    width: 75%;
+    height: 200vh;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box11{
+    border-radius: 15px;
+    width:35% ;
+    height:40vh ;
+    background-color: rgb(204, 208, 211);
+    margin-right: 2rem;
+    margin-top: 4rem;
+    text-align: center;
+    overflow: auto;
+}
+.box12{
+    border-radius: 15px;
+    width:35% ;
+    height:40vh ;
+    background-color: rgb(204, 208, 211);
+    position: relative;
+    top: 100px;
+    text-align: center;
+    overflow: auto;
+}
+.box13{
+    border-radius: 15px;
+    width:35% ;
+    height:40vh ;
+    background-color: rgb(204, 208, 211);
+    margin-right: 2rem;
+    position: relative;
+    bottom: 19.5rem;
+    text-align: center;
+    overflow: auto;
+
+}
+.box14{
+    border-radius: 15px;
+    width:35% ;
+    height:40vh ;
+    background-color: rgb(204, 208, 211);
+    position: relative;
+    bottom:17.5rem ;
+    text-align: center;
+    overflow: auto;
+}
+.box11 p{
+    margin: 20px;
+    margin-top: 4rem;
+}

@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .parent {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    background-color: #f8c88d;
+    border-radius: 100px;
+    
+  }
+  .child {
+    width: 150px;
+    height: 150px;
+    background-color: #4284ff;
+    border-radius: 100px;
+    
+  }
+  .parent:hover .child {
+    animation:top-to-bottom 1s ease-in-out forwards 3 alternate;
+    /* animation-name: top-to-bottom; */
+    /* animation-duration: 1s; */
+    /* animation-timing-function: ease-in-out; */
+    /* animation-fill-mode: forwards; */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+   }
+
+@keyframes top-to-bottom{
+  0% {
+transform: translateY(250px);    
+  }
+  33%{
+    background-color: blueviolet;
+  }
+}

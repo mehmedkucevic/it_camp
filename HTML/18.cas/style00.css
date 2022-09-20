@@ -31,14 +31,30 @@ padding-left: 10rem;
 .box2 a{
     padding-right: 1.5rem;
 }
-li button{
+ul{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    margin-top: 0.9rem;
+}
+ul button{
+    border-radius: 15px;
+    background-color: #ffffff;
+    border: none;
+    padding: 10px;
+    width: 7rem;
+    position: relative;
+    top: -7px;
+}
+
+/* {
 
     border: #ffffff;
     background-color: #ffffff;
     color: black;
     border-radius: 15px;
     margin-left: 5rem;
-}
+} */
 .main{
     width: 75%;
     height: 200vh;
@@ -93,3 +109,5 @@ li button{
     margin: 20px;
     margin-top: 4rem;
 }
+
+ 

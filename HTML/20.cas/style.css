@@ -1,0 +1,46 @@
+* {
+  margin: 0%;
+  box-sizing: border-box;
+}
+.main {
+  background-color: #c8ebff;
+  width: 80%;
+  height: 75vh;
+  margin: auto;
+}
+/* Tipovi koji su podrzani u media query su: */
+/* 1. all (odnosi se na sve tipove i to je nesto sto cemo gotovo uvek koristiti)-defaultna vrednost*/
+/* 2. screen ( odnosi se konkretno samo na prikaz na ekranima ) */
+/* 3. */
+
+@media (min-width: 501px) and (max-width: 678px) {
+  body {
+    font-size: 0.9rem;
+  }
+  .main {
+    height: 75vh;
+    background-color: blueviolet;
+    width: 100%;
+  }
+  .main h1 {
+    text-align: center;
+    color: aquamarine;
+  }
+}
+/* @media all and (orientation:landscape) { */
+/* @media all and (orientation:portait) { */
+@media all and (max-width: 500px) {
+  body {
+    font-size: 0.8rem;
+  }
+
+  .main {
+    width: 100%;
+    padding: 1rem;
+    height: 42vh;
+    overflow: auto;
+  }
+  .main h1 {
+    color: black;
+  }
+}

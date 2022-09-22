@@ -1,0 +1,79 @@
+* {
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.main {
+    margin: auto;
+    width: 70%;
+    height: 200vh;
+    background-color: #faebd7;
+}
+footer {
+    background-color: #e0e0e0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+
+
+}
+footer:hover .ball1 {
+   
+    transform: translateX(1853px) ;
+
+}
+footer:hover .ball2 {
+   
+    transform: translateX(-1853px) ;
+
+}
+.ball1 {
+    background-color: #8808ff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation-name: lopta1;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  
+  transition: transform 1s cubic-bezier(0.45, 0.05, 0.56, 0.97) 1s;
+
+}
+
+@keyframes lopta1 {
+    0%   {background-color: #ff0000; }
+    15%  {background-color: #8808ff; }
+    25%  {background-color: #9bffa9; }
+    50%  {background-color: #b0b0ff; }
+    75%  {background-color: #dc143c; }
+    90%  {background-color: #f7ff8e; }
+    100% {background-color: #8808ff; }
+   
+  }
+
+.ball2 {
+    background-color: #c1e5fd;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    flex-direction: row;
+    position:absolute;
+    right:0;
+    animation-name: lopta2;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    
+    transition: transform 1s cubic-bezier(0.45, 0.05, 0.56, 0.97) 1s;
+  
+}
+@keyframes lopta2 {
+    0%   {background-color: #ff0000; }
+    15%  {background-color: #8808ff; }
+    25%  {background-color: #9bffa9; }
+    50%  {background-color: #b0b0ff; }
+    75%  {background-color: #dc143c; }
+    90%  {background-color: #f7ff8e; }
+    100% {background-color: #8808ff; }
+   
+  }

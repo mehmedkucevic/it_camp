@@ -1,50 +1,47 @@
-*{
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
 }
-header{
-    background-color:#0300ac;
-    color: #ffffff;
-    display: flex;
-justify-items:center;
+header {
+  background-color: #6610f2;
+  color: #ffffff;
+  display: flex;
+  justify-items: center;
 
-height: 70px;
-
+  height: 70px;
 }
-a{
-    text-decoration: none;
-    color: #ffffff;
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
-.box1{
-padding-top:0.5rem;
-padding-left: 10rem;
-    text-decoration: solid;
-    
+.box1 {
+  padding-top: 0.5rem;
+  padding-left: 10rem;
+  text-decoration: solid;
 }
 
-.box2{
-    margin: auto;
-    margin-left: 24rem;
-    
+.box2 {
+  margin: auto;
+  margin-left: 24rem;
 }
-.box2 a{
-    padding-right: 1.5rem;
+.box2 a {
+  padding-right: 1.5rem;
 }
-ul{
-    text-decoration: none;
-    list-style-type: none;
-    display: flex;
-    margin-top: 0.9rem;
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  margin-top: 0.9rem;
 }
-ul button{
-    border-radius: 15px;
-    background-color: #ffffff;
-    border: none;
-    padding: 10px;
-    width: 7rem;
-    position: relative;
-    top: -7px;
+ul button {
+  border-radius: 15px;
+  background-color: #ffffff;
+  border: none;
+  padding: 10px;
+  width: 7rem;
+  position: relative;
+  top: -7px;
 }
 
 /* {
@@ -55,59 +52,66 @@ ul button{
     border-radius: 15px;
     margin-left: 5rem;
 } */
-.main{
-    width: 75%;
-    height: 200vh;
-    background-color: rgb(255, 255, 255);
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+.main {
+  display: block;
+  border: solid;
+  width: 1250px;
+  height: 700px;
+  background-color: rgb(255, 255, 255);
+  margin: 8rem 0 0 6rem;
+  display: flex;
+  flex-wrap: wrap;
 }
-.box11{
-    border-radius: 15px;
-    width:35% ;
-    height:40vh ;
-    background-color: rgb(204, 208, 211);
-    margin-right: 2rem;
-    margin-top: 4rem;
-    text-align: center;
-    overflow: auto;
+.box11 {
+  display: block;
+  border-radius: 15px;
+  width: 250px;
+  height: 250px;
+  background-color: rgba(240, 236, 236, 0.514);
+  text-align: center;
+  overflow: auto;
 }
-.box12{
-    border-radius: 15px;
-    width:35% ;
-    height:40vh ;
-    background-color: rgb(204, 208, 211);
-    position: relative;
-    top: 100px;
-    text-align: center;
-    overflow: auto;
-}
-.box13{
-    border-radius: 15px;
-    width:35% ;
-    height:40vh ;
-    background-color: rgb(204, 208, 211);
-    margin-right: 2rem;
-    position: relative;
-    bottom: 19.5rem;
-    text-align: center;
-    overflow: auto;
+.box12 {
+  display: block;
+  border-radius: 15px;
+  width: 250px;
+  height: 250px;
+  background-color: rgba(240, 236, 236, 0.514);
 
+  text-align: center;
+  overflow: auto;
 }
-.box14{
-    border-radius: 15px;
-    width:35% ;
-    height:40vh ;
-    background-color: rgb(204, 208, 211);
-    position: relative;
-    bottom:17.5rem ;
-    text-align: center;
-    overflow: auto;
+.box13 {
+  display: block;
+  border-radius: 15px;
+  width: 250px;
+  height: 250px;
+  background-color: rgba(240, 236, 236, 0.514);
+  /* position: relative;
+    top: 30px; */
+  text-align: center;
+  overflow: auto;
 }
-.box11 p{
-    margin: 20px;
-    margin-top: 4rem;
+.box14 {
+  display: block;
+  border-radius: 15px;
+  width: 250px;
+  height: 250px;
+  background-color: rgba(240, 236, 236, 0.514);
+  position: relative;
+top: -160px;
+left: 30px;
+  text-align: center;
+  overflow: auto;
 }
-
- 
+.box11 p {
+  
+  
+}
+.main img {
+  position: relative;
+  top: 6rem;
+  left: 7rem;
+  border-radius: 20px;
+  /* align-self: flex-end;   */
+}

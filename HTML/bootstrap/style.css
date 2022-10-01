@@ -1,0 +1,21 @@
+.card{
+    margin: auto;
+}
+.container{
+    width: 100%;
+}
+    .dugme{
+        padding-bottom: 20px;
+    }
+    
+    nav{
+        margin-bottom: 20px;
+    }
+    #carouselExampleIndicators{
+        margin-bottom: 150px;
+    
+    }
+    #carouselExampleIndicators img{
+        height: 600px;
+        border-radius: 20px;
+    }

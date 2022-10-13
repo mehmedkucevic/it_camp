@@ -51,11 +51,9 @@ console.log(daLiPadaKisa);
 // 5. undefined  - je tip podatka koji se javlja  kada imamo deklarisanu neku promenu ali joj nismo dodelili vrednost .
 // u tom slucaju i vrednost i tip pormenljive je undefined.
 
-let prom1;  //deklarisanje promenljive
+let prom1; //deklarisanje promenljive
 prom1 = 54; // inicijalizacija (dodela vrednosti) promenljive
-
 
 // 6. null - je tip podatka za nepostojecu promenljivu ili za promenljivu kojoj smo dodelili nekorektnu vrednost.
 
-
-console.log(skola)
+console.log(skola);

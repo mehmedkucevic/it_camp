@@ -158,3 +158,17 @@ prom11 > 0 || prom22 > 0 || prom33 > 0
 
 console.log(!Boolean(prviDeo + " " + drugiDeo));
 
+// 6. Tip opertori (Type operators).
+
+// 6.1  typeof se koristi za ispitivanje tipa odredjene promenljive
+
+isSynny = false;
+console.log(typeof isSynny);
+// 6.2  instanceof - za proveru da li je neka promenljiva instanca objekta npr.
+
+const obj = {
+    ime:"Omar"
+
+}
+
+console.log(obj instanceof Object)

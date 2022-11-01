@@ -121,4 +121,9 @@ switch(dan){
     console.log("Lepo se provedi za vikend")
     alert("Provedite ostatak vikenda ugodno!")
     break
+
+    default:
+      (dan > 6)
+      console.log("Niste uneli tacan broj dana")
+      alert("Niste uneli tacan broj dana")
 }

@@ -123,7 +123,6 @@ switch(dan){
     break
 
     default:
-      (dan > 6)
       console.log("Niste uneli tacan broj dana")
       alert("Niste uneli tacan broj dana")
 }

@@ -82,4 +82,43 @@ console.log(new Date().getDay())
 // Na osnovu vrednosti koju nam daje izraz iz switch naredbe, kroz case-ove i eventualno default ispisati poruku:
 
 // "Danas je 'radni dan' " 
-// "Ugodno provedie vikend"
+// "Ugodno 
+
+let dan=+prompt("Unesite te dan: ")
+
+switch(dan){
+  case 0:
+    console.log("Provedite ostatak vikenda ugodno!")
+    alert("Provedite ostatak vikenda ugodno!")
+    break
+
+    case 1:
+    console.log("Radni dan🙂")
+    alert("Radni dan je🙂")
+    break
+
+    case 2:
+    console.log("Radni dan🙂")
+    alert("Radni dan je🙂")
+    break
+
+    case 3:
+    console.log("Radni dan🙂")
+    alert("Radni dan je🙂")
+    break
+
+    case 4:
+    console.log("Radni dan🙂")
+    alert("Radni dan je🙂")
+    break
+
+    case 5:
+    console.log("Radni dan🙂")
+    alert("Radni dan je🙂")
+    break
+
+    case 6:
+    console.log("Lepo se provedi za vikend")
+    alert("Provedite ostatak vikenda ugodno!")
+    break
+}

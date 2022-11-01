@@ -24,7 +24,3 @@ if (isNaN(prviBroj) || isNaN(drugiBroj)) {
 const x = Number(prompt("Unesite prvi broj"));
 const y = +prompt("Unesite druugi broj");
 
-if (isNaN(x) || isNaN(y)) {
-  console.log("Vrednosi moraju biti brojevi");
-} else if (y === x) {
-}

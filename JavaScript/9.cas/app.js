@@ -18,10 +18,10 @@ console.log(omar.length);
 
 // Kod ovakvih zadataka iterator predstavlja index pomocu kojeg pristupamo karakteru stringa
 
-recenica = "danas cemo raditi neke opercaije sa stringovima";
-for (let i = 0; i < duzina; i++) {
-  console.log(recenica[i]);
-}
+// recenica = "danas cemo raditi neke opercaije sa stringovima";
+// for (let i = 0; i < duzina; i++) {
+//   console.log(recenica[i]);
+// }
 
 
 // Na osnovu unete recenice od strane kosrisnika ispisati recenicu tako da svaki karakter ide jedan ispod drugog

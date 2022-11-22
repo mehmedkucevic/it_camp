@@ -14,3 +14,4 @@ console.log(brojac);
 
 const recenica2 = prompt("Unesite neki string")
 let novaRecenica2 = ""
+//jos malo pa pocinje drugi ciklus hihiha

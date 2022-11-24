@@ -57,16 +57,87 @@ console.log(aritmetickaSredina(4, 5, 3));
 console.log(aritmetickaSredina(4, 5));
 console.log(aritmetickaSredina());
 
-
 //======================================================================================================//
 // e
 
-function povrsina(a=1,b=1){
-    if(a===b){
-        return a*b + " ova dva broja su ista"
-    }else{
-        return a*b + " razlicita su ova dva broja"
-    }
+function povrsina(a = 1, b = 1) {
+  if (a === b) {
+    return a * b + " ova dva broja su ista";
+  } else {
+    return a * b + " razlicita su ova dva broja";
+  }
 }
-console.log(povrsina(3,3))
-console.log(povrsina(3,4))
+console.log(povrsina(3, 3));
+console.log(povrsina(3, 4));
+
+// TRECI ZADATAK SA TESTA PREKO FUNCTION KEYWORD//
+
+// let recenica;
+// recenica = “Nakon danasnjeg testa cemo znati ko ce nastaviti sa drugim ciklusom it campa”
+// Na osnovu date recenice napraviti i ispisati novu recenicu tako da:
+
+// (i)se svi samoglasnici pretvore u velika slova;
+// (ii)na kraju se doda ‘.’
+// (iii)ostali karakteri se ne menjaju.
+// Dakle, treba se ispisati:
+// “NAkOn dAnAsnjEg tEstA cEmO znAtI kO cE nAstAvItI sA drUgIm cIklUsOm It cAmpA.”
+
+// function novaRecenica(recenica) {
+//   let recenica2 = "";
+//   for (let i = 0; i < recenica.length; i++) {
+//     if (
+//       recenica[i] === "a" ||
+//       recenica[i] === "e" ||
+//       recenica[i] === "i" ||
+//       recenica[i] === "o" ||
+//       recenica[i] === "u"
+//     ) {
+//       recenica2 += recenica[i];
+//     }
+//   }
+//   return recenica2;
+// }
+
+// console.log(novaRecenica("Pocelo je svetsko prvenstvo u fudbalu"));
+
+// const myFunction = () => {
+//   //function code
+// };
+
+// const proizvodDvaBroja = (br1, br2) => {
+//   return br1 * br2;
+// };
+// console.log(proizvodDvaBroja(2, 16));
+
+//ako arrow funkicja ima samo jedan parametar nije neophoddno okruziti ga zagradama
+// ako je funkcija jednostavna tjst. ako odma vraca neki  jednostavan izraz onda sama sintaksa izgleda kraca zapravo nuje neophodno koristiti {} zagrade i return keyword
+
+// const kvadratDvaBroja = (broj) => broj ** 2;
+
+//=======================================================================================================//
+
+const unos = () => {
+  const broj = Number(prompt("unesite neki broj"));
+  if (isNaN(broj)) {
+    return "uneta vrednost nije broj";
+  } else if (broj === 0) {
+    return "uneta je nula";
+  } else if (broj < 0) {
+    return "broj je negativan";
+  } else {
+    return "broj je pozitivan";
+  }
+};
+
+console.log(unos);
+
+///////////////////////////
+
+const satnica = (br1, br2) => {
+  if (br1 >= 9 && br1 < 17 && br2 >= 0 && br2 <= 59) {
+    return "stigao";
+  } else return "nije stigao";
+};
+console.log(satnica(10, 5));
+console.log(satnica(10, 59));
+console.log(satnica(17, 0));

@@ -54,33 +54,55 @@ console.log(c);
 // funckija treba vratiti poruku:
 // argument + {njena duzina} + "nedovoljno za dalje ispitivanje"
 
-const myFunction = function (recenica) {
+const mojaFukncija = function (recenica) {
   if (recenica.length > 9) {
     let polaDuzine;
-    if (recenica.length % 2 === 0) {
-      polaDuzine = recenica.length / 2;
-    } else if (recenica.length % 2 !== 0) {
-      polaDuzine = Math.ceil(recenica.length / 2);
-    } else {
-    }
+    // if (recenica.length % 2 === 0) {
+    //   polaDuzine = recenica.length / 2;
+    // } else if (recenica.length % 2 !== 0) {
+    //   polaDuzine = Math.ceil(recenica.length / 2);
+    // }
+    polaDuzine =
+      recenica.length % 2 === 0
+        ? recenica.length / 2
+        : Math.ceil(recenica.length / 2);
+    const isecak = recenica.slice(polaDuzine, recenica.length);
+    const novaRecenica = isecak.replace(/a/g, "B");
+    const konacno = "Ovo je novodobijena recenica, ".concat(novaRecenica);
+    return konacno;
+  } else {
+    const recenica2 = recenica.concat(
+      recenica.length,
+      "nedovoljno za dalje ispitivanje."
+    );
+    return recenica2;
   }
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(mojaFukncija("Kraj casa"));
+console.log(mojaFukncija("Kraj 2. casa rada sa stringovima."));
 
 
 // domaci zadatak (pogledaj github.....)
+
+
+
+
+//napravitu funkciju koja trazi od korisnika da unese neku recenicu zatim funkcija vraca ,
+
+// datu recenicu u vise oblika (spojenu u jedan string).
+//1.recenicu ispisanim velikim slovima.
+//2. recenicu ispisanu malim slovima 
+//3.pola recenice ispisano velikim slovima pola recenice ispisano malim slovima
+
+//4.ako su recenici nadje rec skola neka bude zamenjena recju fakultet, 
+//5. neka bude ispisano prvih 10 karaktera unete recenice , 
+//6. neka bude ispisano poslednjih 10 karaktera unete recenice.
+
+
+
+
+
+
+
 

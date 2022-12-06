@@ -3,8 +3,8 @@ const sumaCifara = (broj) => {
     return "argument nije korektan";
   } else {
     const cifraJedinice = broj % 10;
-    const cifraDesetice = Math.trunc((broj % 100) / 10) 
-    const cifraStotine = Math.trunc((broj % 1000) / 100)
+    const cifraDesetice = Math.trunc((broj % 100) / 10);
+    const cifraStotine = Math.trunc((broj % 1000) / 100);
     const cifraHiljade = Math.trunc(broj / 1000);
     return (
       cifraJedinice +
@@ -19,22 +19,30 @@ const sumaCifara = (broj) => {
   }
 };
 
-
-console.log(sumaCifara(1212))
-
-
-// II domaci
+console.log(sumaCifara(1212));
 
 
-const funkcija1=(flasa,bure)=>{ 
 
 
-       if(isNaN(flasa)||isNaN(bure)) return "los unos" 
-        else if(bure<0||bure>50||flasa<0||flasa>5) 
-         return "los unos" 
-          brojac=Math.floor(bure/flasa) 
-           return "od flasa od "+flasa+" litara i bureta koje ima "+bure +" litara\nMoze se naprviti "+brojac+" flasa" 
 
 
-          } 
-           console.log(funkcija1(4,51))
+
+
+// 2. domaci
+
+const funkcija1 = (flasa1, balon1) => {
+  if (isNaN(flasa1) || isNaN(balon1)) return "los unos";
+  else if (balon1 < 0 || balon1 > 50 || flasa1 < 0 || flasa1 > 5)
+    return "unos nije dobar";
+  brojac = Math.floor(balon1 / flasa1);
+  return (
+    "od flasa od " +
+    flasa1 +
+    " litara i bureta koje ima " +
+    balon1 +
+    " litara\nMoze se naprviti " +
+    brojac +
+    " flasa"
+  );
+};
+console.log(funkcija1(2, 51));

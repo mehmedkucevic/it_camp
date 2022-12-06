@@ -35,9 +35,9 @@ const funkcija1 = (flasa1, balon1) => {
     flasa1 +
     " litara i bureta koje ima " +
     balon1 +
-    " litara\nMoze se naprviti " +
+    " litara,\nmoze se naprviti " +
     brojac +
     " flasa"
   );
 };
-console.log(funkcija1(2, 51));
+console.log(funkcija1(4, 16));

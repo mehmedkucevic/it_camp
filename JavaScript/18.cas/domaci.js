@@ -1,3 +1,5 @@
+// 1. domaci
+
 const sumaCifara = (broj) => {
   if (isNaN(broj) || broj < 1000 || broj > 9999) {
     return "argument nije korektan";

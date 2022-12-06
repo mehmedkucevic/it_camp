@@ -23,13 +23,6 @@ const sumaCifara = (broj) => {
 
 console.log(sumaCifara(1212));
 
-
-
-
-
-
-
-
 // 2. domaci
 
 const funkcija1 = (flasa1, balon1) => {

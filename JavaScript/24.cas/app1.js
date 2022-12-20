@@ -117,3 +117,21 @@ console.log(typeof Number({})); // NaN
 // Napraviti funkciju koja ocekuje cetvorocifren broj, a vraca broj kojem su zamenjena prva i treca cifra, druga i cetvrta cifra
 // 1234
 // 3412
+
+function zamena(br) {
+  if (br > 9999 || br < 1000) {
+    return " cetvorocifren broj da se unese.";
+  } else {
+    const cifraJedinice = br % 10;
+    const cifraDesetice = Math.trunc((br % 100) / 10);
+    const cifraStotina = Math.trunc((br % 1000) / 100);
+    const cifraHiljada = Math.trunc(br / 1000);
+    return (
+      cifraDesetice.toString() +
+      cifraJedinice.toString() +
+      cifraHiljada.toString() +
+      cifraStotina.toString()
+    );
+  }
+}
+console.log(zamena(1234));

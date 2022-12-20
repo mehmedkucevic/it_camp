@@ -119,9 +119,11 @@ console.log(typeof Number({})); // NaN
 // 3412
 
 function zamena(br) {
+
   if (br > 9999 || br < 1000) {
     return " cetvorocifren broj da se unese.";
-  } else {
+  } 
+  else {
     const cifraJedinice = br % 10;
     const cifraDesetice = Math.trunc((br % 100) / 10);
     const cifraStotine = Math.trunc((br % 1000) / 100);

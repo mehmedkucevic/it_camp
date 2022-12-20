@@ -124,13 +124,13 @@ function zamena(br) {
   } else {
     const cifraJedinice = br % 10;
     const cifraDesetice = Math.trunc((br % 100) / 10);
-    const cifraStotina = Math.trunc((br % 1000) / 100);
-    const cifraHiljada = Math.trunc(br / 1000);
+    const cifraStotine = Math.trunc((br % 1000) / 100);
+    const cifraHiljade = Math.trunc(br / 1000);
     return (
       cifraDesetice.toString() +
       cifraJedinice.toString() +
-      cifraHiljada.toString() +
-      cifraStotina.toString()
+      cifraHiljade.toString() +
+      cifraStotine.toString()
     );
   }
 }

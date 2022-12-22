@@ -113,10 +113,47 @@ console.log(typeof Number([])); // 0
 
 console.log(typeof Number({})); // NaN
 
+
+// 2. parseInt() - analizira argument i vraca ceo broj ako je moguce
+
+console.log(parseInt("23  ")); // 23
+// okolni razmaci ne prave problem
+console.log(parseInt ("23")); // 23
+
+console.log(parseInt ("23+5")); // 23
+// razmaci jesu dozvoljeni kod parsInt metode ali se uzima prvi broj pre razmaka
+console.log(parseInt ("23 5")); // 23
+
+console.log(parseInt("asd")); // NaN
+
+console.log(parseInt(true))// NaN
+
+console.log(parseInt(false))// NaN
+
+// 3. parseFloat() - analizira argument i vraca realni broj sa ddecimalnim zapisom ako je moguce.
+
+console.log(parseFloat("23  ")); // 23
+// okolni razmaci ne prave problem
+console.log(parseFloat ("23")); // 23
+
+console.log(parseFloat ("23+5")); // 23
+// razmaci jesu dozvoljeni kod parsInt metode ali se uzima prvi broj pre razmaka
+console.log(parseFloat ("23 5")); // 23
+
+console.log(parseFloat("asd")); // NaN
+
+console.log(parseFloat("23.78")); // 23.78
+
+console.log(parseFloat(true))// 
+
+console.log(parseFloat(false))// 
+
 // Domaci zadatak :
 // Napraviti funkciju koja ocekuje cetvorocifren broj, a vraca broj kojem su zamenjena prva i treca cifra, druga i cetvrta cifra
 // 1234
 // 3412
+
+// I nacin
 
 function zamena(br) {
 
@@ -137,3 +174,19 @@ function zamena(br) {
   }
 }
 console.log(zamena(1234));
+console.log(zamena(587));
+
+
+// II nacin
+
+function zamena2(broj){
+  const stringBroja = broj.toString
+  if(stringBroja.length !== 4 || isNaN(stringBroja)){
+    return `Uneta vrednost mora biti cetvorocifren broj`
+  }else {
+    const prviDeo = stringBroja.slice(0,2)
+    const drugiDeo = stringBroja.slice(2)
+    const noviBroj = drugiDeo.concat(prviDeo)
+    return +noviBroj
+  }
+}

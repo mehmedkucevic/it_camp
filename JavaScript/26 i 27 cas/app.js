@@ -93,15 +93,34 @@ console.log(Math.sin(Math.PI / 2)); // 1
 console.log(Math.cos(0)); // 1
 console.log(Math.cos(Math.PI / 2)); // 0
 
-function blizi(prvi, drugi) {
-  if (prvi != drugi) {
-    prviBroj = Math.abs(prvi - 100);
-    drugiBroj = Math.abs(drugi - 100);
-    if (prviBroj < drugiBroj) return `Prvi broj je blizi broju 100.`;
-  } 
-  else if  (drugiBroj<prviBroj){
-   return `Drugi broj je blizi broju 100.`;
-  }
-}
-console.log(blizi(99, 102));
-console.log(blizi(78, 101));
+// Primena kod nizova:
+const najmanji = Math.min.apply(null,[19,55,33])
+console.log(najmanji)
+
+// Math.random() - vraca nam broj izmedju 0 (ukljucujuci) i 1 (nije ukljucen)
+console.log(Math.random())
+
+// Broj izmedju 0 i 1:
+
+const broj = Math.round(Math.random())
+
+console.log(broj)
+
+// Broj izmedju 0 i 5:
+const broj2 = Math.round(Math.random()*5)
+console.log(broj2)
+
+// Broj izmedju 50 i 100:
+// mozemo sa brojem kolik ce opseg  zapravo biti, a dodajemo broj koji predstavlja pocetnu vrednost iz opsega.
+const broj3 =Math.round(Math.random()*50 +50)
+console.log(broj3)
+
+// Math.log(x) - vraca vrednost logaritma broja x za osnovu E
+// Math.log2(x) - vraca vrednost logaritma broja x za osnovu 2
+// Math.log10(x) -  vraca vrednost logaritma broja x za osnovu 10
+
+console.log(Math.log(0.36))
+console.log(Math.log2(1.5))
+console.log(Math.log10(10))
+
+

@@ -63,19 +63,14 @@ const nzd = (a, b) => {
   while (manji >= 1) {
     if (a % manji === 0 && b % manji === 0) {
       zeljeniBroj = manji;
-      break
+      break;
     }
     manji--;
   }
-  return zeljeniBroj
+  return zeljeniBroj;
 };
-console.log(nzd(10,15))
-console.log(nzd(15,10))
-console.log(nzd(5,10))
-console.log(nzd(4,9))
+console.log(nzd(10, 15));
+console.log(nzd(15, 10));
+console.log(nzd(5, 10));
+console.log(nzd(4, 9));
 
-
-
-// Homework //
-
-// Write a JavaScript function to get the least common multiple () of two numbers.

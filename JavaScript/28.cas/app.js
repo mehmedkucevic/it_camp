@@ -15,42 +15,48 @@ console.log(trenutnoVreme);
 
 // meseci  se recunaju od 0 do 11
 
-// ako pravimo datume na ovaj nacin moramo imati min 2 arguenta , a max 7 
+// ako pravimo datume na ovaj nacin moramo imati min 2 arguenta , a max 7
 
-const datum = new Date(2007,9,23,8,2,1, 8)
-console.log(datum)
+const datum = new Date(2007, 9, 23, 8, 2, 1, 8);
+console.log(datum);
 
-const datum1 = new Date (2007,7)
-console.log(datum1)
+const datum1 = new Date(2007, 7);
+console.log(datum1);
 
 // 3. Nacin - slanje jednog argumenta i vracanje defaultne vrednosti 1970 god zajdeno sa argumentom. Argument predstalja milisekunde.
 
-datum2 = new Date(2022)
-console.log(datum2)
+// datum2 = new Date(2022)
+// console.log(datum2)
 
 // 4. nacin - Slanjem stringa u Date() kao argument. String ce biti parse-ovan i dobicemo datum na osnovu toga
 
-datum3 =new Date()
+// datum3 =new Date()
 
 // Jednai dve cifre godine ce biti interpretirane kao:
 // 19xx ili 190x
-datum = new Date(86,0)
-console.log(datum)
+// datum = new Date(86,0)
+// console.log(datum)
 
-datum = new Date(6,0)
-console.log(datum)
- 
+// datum = new Date(6,0)
+// console.log(datum)
+
 // Date.now
 
-const  datum2 = Date.now ()
-console.log(datum2)// daje nam trenutno vreme ali zapisano u milisekindama izmedju danasnjeg datuma i defaultong datuma.
+// const  datum2 = Date.now ()
+// console.log(datum2)// daje nam trenutno vreme ali zapisano u milisekindama izmedju danasnjeg datuma i defaultong datuma.
 
 // vraca nam broj ms od 1.1.1970. do poslatog datumas
-console.log(Date.parse(datum))
-
+// console.log(Date.parse(datum))
 
 // domaci
 
-// const date1 = new Date(1999,5,24)
-// const date2 = new Date(2004,9,15)
-// console.log(date1.parse(date2))
+let date1 = "1999-05-24";
+let date2 = "2004-09-15";
+
+date1 = new Date(date1);
+date2 = new Date(date2);
+let izmedju = Math.abs(date2.getTime() - date1.getTime());
+
+let dani = izmedju / (1000 * 60 * 60 * 24);
+
+console.log(`Razlika između ${date1} i ${date2} je ${dani} dana.`);

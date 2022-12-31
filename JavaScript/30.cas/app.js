@@ -72,8 +72,8 @@ console.log(dani);
 console.log(dani.push("cetvrtak", "petak"));
 console.log(dani);
 
-dani[dani.length] = "subota"
-console.log(dani)
+dani[dani.length] = "subota";
+console.log(dani);
 
 // Nizovi su zapravo vrsta objekata koji imaju brojevne index-e.
 
@@ -81,17 +81,42 @@ console.log(dani)
 
 // 1. toString()
 
-
-const daniStr =  dani.toString()
-console.log(typeof daniStr)
+const daniStr = dani.toString();
+console.log(typeof daniStr);
 // obrnuti postupak
-const dani0 = daniStr.split(",")
-console.log(dani0)
+const dani0 = daniStr.split(",");
+console.log(dani0);
 
 // 2. join()
 // Klascni primer:
-const daniStr2 = dani.join()
-console.log(daniStr2)
-console.log(typeof daniStr2)
+const daniStr2 = dani.join();
+console.log(daniStr2);
+console.log(typeof daniStr2);
 
-// Dobijanje 
+// Dobijanje stringa i stavljanje nekog znakka izmedju elemenata niza koji smo pretvorili u string
+const daniStr3 = dani.join("*");
+console.log(daniStr3);
+
+// pop() metoda brise poslednji element iz niza.
+
+const subota = dani.pop();
+console.log(dani);
+console.log(subota);
+
+// homework
+// iz datog niza ispitati koliko elemenata je tipa string
+// koliko tipa number
+// koliko tipa boolean
+// koliko elemenata je zapravo niz?
+
+const nizz = [
+  "jagoda",
+  25,
+  true,
+  "mandarina",
+  [1, 2, 3],
+  "ananas",
+  49,
+  694,
+  "tresnja",
+];

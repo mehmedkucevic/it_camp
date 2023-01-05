@@ -1,21 +1,21 @@
-function countElements(arr) {
+function countElements(array) {
   var result = {
     string: 0,
     number: 0,
     boolean: 0,
     array: 0,
   };
-  for (var i = 0; i < arr.length; i++) {
-    if (typeof arr[i] === "string") {
+  for (var i = 0; i < array.length; i++) {
+    if (typeof array[i] === "string") {
       result.string++;
     }
-    if (typeof arr[i] === "number") {
+    if (typeof array[i] === "number") {
       result.number++;
     }
-    if (typeof arr[i] === "boolean") {
+    if (typeof array[i] === "boolean") {
       result.boolean++;
     }
-    if (Array.isArray(arr[i])) {
+    if (Array.isArray(array[i])) {
       result.array++;
     }
   }

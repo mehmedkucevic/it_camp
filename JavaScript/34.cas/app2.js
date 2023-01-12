@@ -37,4 +37,5 @@ niz.forEach((element) => {
 
  const brojevi = [ -5,4,3,10,14,-5]
  // napraviti novi niz koji ce sve negativne brojeve pomnoziti sa (-1,) , a sve pozitivne kvadrirati
- 
+
+ // 4.

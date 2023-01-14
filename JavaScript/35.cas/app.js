@@ -14,3 +14,5 @@ const second = (arr) => {
   return newArr;
 };
 console.log(second([5, 3, 5, 3]));
+
+// Domaci

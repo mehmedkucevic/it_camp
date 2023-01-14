@@ -1,27 +1,29 @@
 // callback funkcije //
 
-// callback funkcija predstavlja funckiju koju saljemo kao argument neke druge funkcije
-// Sam argument ne treba da bude
-function main(func) {
-  console.log("radnja unutar main funkcije");
+// callback funkcija predstavlja funkciju koju saljemo kao argument neke druge funkcije.
+// Sam argument ne treba da bude izvrsavanje callback funkcije vec referenca na datu radnju.
+
+function glavnaFunkcija(func) {
+  console.log("Radnja unutar glavne funkcije.");
   func();
-  console.log("kraj main funkcije");
+  console.log("Kraj glavne funkcije.");
 }
 
 function callback() {
-  console.log("radnjaa unutar callback funkcije");
+  console.log("Radnja unutar callback funkcije.");
 }
 
-main(callback);
+glavnaFunkcija(callback);
 
-// napraviti glavnu funk unutar kje ce se desiti ispis sta ona predstavlja, a celu stvar ce da izvrsi callback funk. callback funkcija ima 2 parametra i ispisuje rezultat par1 stepenovan par2
+// Napraviti glavnu funkciju unutar koje ce se desiti ispis sta ona predstavlja, a celu stvar ce da izvrsi callback funkcija. Callback funkcija ima 2 parametra, i ispisuje rezultat par1 stepenovan par2.
 
-const main3 = (callBack2) => {
-  console.log("prvi broj stepenovan drugim je:");
-  callBack3(2, 3);
+const mainFunction = (callBack2) => {
+  console.log("Prvi broj stepenovan drugim je:");
+  callBack2(2, 3);
 };
 
-const callBack3 = (par1, par2) => {
+const callBack2 = (par1, par2) => {
   console.log(par1 ** par2);
 };
-main3(callBack3);
+
+mainFunction(callBack2);

@@ -49,3 +49,19 @@ function numLoop(arrr) {
   return `${element} pojavljuje se ${numRepeat} puta.`;
 }
 console.log(numLoop([1, 2, 3, 4, 5, 6, 2, 2]));
+console.log(numLoop(["a","a"]))
+
+// IN CLASS IV exercise
+
+const change = (str)=>{
+    let newStr = ""
+    for( i = 0;i<str.length;i++){
+        if(str[i] === str[i].toLowerCase()){
+            newStr+= str[i].toUpperCase()
+        }else {
+            newStr+= str[i].toUpperCase()
+        }
+    }
+    return newStr
+}
+console.log(change(""))

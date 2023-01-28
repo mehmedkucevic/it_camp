@@ -72,3 +72,4 @@ myCar.koci= function (){
 }
 myCar.koci()
 console.log(myCar)
+//

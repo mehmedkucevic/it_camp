@@ -71,4 +71,4 @@ const subStr = (str) => {
 };
 console.log(subStr("dog"));
 //
-//
+////

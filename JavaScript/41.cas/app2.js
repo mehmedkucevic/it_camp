@@ -43,7 +43,32 @@ console.log(niz);
 mitar.punoletnost = true;
 console.log(mitar);
 
+const myCar = {};
 
-const myCar = {
-    
+myCar.trenutnaBrzina = 0;
+myCar.maksimalnaBrzina = 260;
+myCar.povecanjeBrzine = function (ubrzanje) {
+  if (this.trenutnaBrzina + ubrzanje > this.maksimalnaBrzina) {
+    return ` nije moguce voziti preko maksimalne brzine`;
+  } else {
+    this.trenutnaBrzina += ubrzanje;
+  }
+};
+myCar.povecanjeBrzine(30)
+console.log(myCar)
+
+myCar.smanjenjeBrzine = function (smanjenje){
+    if(this.trenutnaBrzina - smanjenje < 0){
+        return ` ne mozete smanjiti brzinu za tu vrednost`
+    }else{
+        this.trenutnaBrzina -=smanjenje
+    }
 }
+console.log(myCar.smanjenjeBrzine(40))
+console.log(myCar.smanjenjeBrzine(25))
+console.log(myCar)
+myCar.koci= function (){
+    this.trenutnaBrzina = 0
+}
+myCar.koci()
+console.log(myCar)

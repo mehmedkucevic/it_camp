@@ -70,3 +70,4 @@ const subStr = (str) => {
   return subStrArr;
 };
 console.log(subStr("dog"));
+

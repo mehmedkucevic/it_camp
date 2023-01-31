@@ -96,10 +96,3 @@ console.log(myCar)
 // 5. setNickName - metoda (svaka osoba ima nadimak sastavljen od prva dva slova
 // imena i prva dva slova prezimena)
 
-// const moje = {
-//   ime: "Mehmed",
-//   prezime: "Kucevic",
-//   jezik : "srpski"
-  
- 
-// }

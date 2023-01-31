@@ -58,5 +58,4 @@ const godine = [
 {starost:18},
 {starost:21},
 ]
-const punoletnost = godine.filter((starost) => starost <= 18 )
-console.log(punoletnost)
+const punoletnost = godine.filter((element) => element.starost > 17 )

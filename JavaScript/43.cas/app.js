@@ -52,3 +52,7 @@ console.log(poruka.apply(restoran2,["Sarajevo","Bosna"]))
 const bindFunction = poruka.bind(restoran1)
 console.log(bindFunction("Novi Sad", "Srbija"))
 
+function value () {
+    
+}
+

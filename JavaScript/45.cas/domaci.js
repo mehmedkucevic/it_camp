@@ -234,3 +234,4 @@ const prosek = (arr) => {
   return suma / duzina;
 };
 console.log(prosek(watchList));
+

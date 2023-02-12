@@ -1,98 +1,75 @@
-// JS objekti su mutable (promenljivi)
+// Objekti su glavna stvar u JavaScript_u.
 
-// const dzenan = {
-//   ime: "Dzenan",
-//   prezime: "Mecinovic",
-//   godine: 19,
-// };
+// const niz = ["Amer", "Bakir", "Aladin"]
+//              0        1        2
 
-// const dzenan2 = dzenan;
+// Objekti su promenljive koje sadrze vise vrednosti.
+// Predstavljaju se u key:value parovima.
 
-// console.log(dzenan2);
-// dzenan2.prezime = "Kosuta";
-// dzenan2.godine = 26;
-// console.log(dzenan2);
-// console.log(dzenan);
+const person = {
+  firstName: "Nikola",
+  lastName: "Bozovic",
+  age: 18,
+  adult: true,
+};
 
-// brisanje svojstava iz objekta:
+console.log(person);
+// Pristupanje odredjenim vrednostima objekta mozemo izvrsiti na 2 nacina:
+// Jedan key:value par se property (svojstvo).
 
-// const person = {
-//   ime: "Mitar",
-//   prezime: "Vranic",
-//   godine: 20,
-//   skola: "Prva Tehnicka",
-// };
-// delete Mitar.skola;
-// delete obj.property brise i key i value
-// console.log(mitar);
+// 1. objectName.propertyName (person.firstName)
 
-// delete mitar["skola"];
-// 
-// NAPOMENA
-// Vrednosti nekog objekta mogu biti
-// Objekti
-// Funkcije
-// Nizovi...
+// 2. objectName["propertyName"]          (person["firstName"])
 
-// Konvertovanje objekta u niz :
-// Object.values(obj)
-// const niz = Object.values(mitar);
-// console.log(niz);
+console.log(person.firstName);
+const punoletnost = person.adult === true ? "jeste" : "nije";
+console.log(`${person["firstName"]} ${punoletnost} punoletan.`);
 
-// dodavanje novih svojstava:
-// mitar.punoletnost = true;
-// console.log(mitar);
-// clearTimeout
-const myCar = {
-  id: 1,
-  marka: "Audi",
-  model: "a4",
-  boja: "Crvena",
-  pogon: "prednji",
-  menjac: "automatski",
-  kontakt: [0622222, 02033322],
-  servis: {
-    datum: "04,maj",
-    km: 23000,
-    serviser: "Pasovic",
+// Object Methods //
+// Objekti takodje mogu imati metode.
+// Metode su funkcije koje ce se izvrsiti na objektu.
+// Metode su skladistene u svojstvima kao definicije funkcija.
+
+const person2 = {
+  firstName: "Alen",
+  lastName: "Muslic",
+  age: 17,
+  adult: false,
+  fullName: function () {
+    return `${this.firstName} ${this.lastName}`;
   },
-  udaran: true,
 };
+console.log(person2.fullName());
 
-myCar.trenutnaBrzina = 0;
-myCar.maksimalnaBrzina = 260;
-myCar.povecanjeBrzine = function (ubrzanje) {
-  if (this.trenutnaBrzina + ubrzanje > this.maksimalnaBrzina) {
-    return ` nije moguce voziti preko maksimalne brzine`;
-  } else {
-    this.trenutnaBrzina += ubrzanje;
-  }
-};
-myCar.povecanjeBrzine(30)
-console.log(myCar)
+// u JavaScriptu this je keyword (rezervisana rec) koja ukazuje na neki objekat.
+// this nije promenljiva i ne mozemo promeniti vrednost this.
 
-myCar.smanjenjeBrzine = function (smanjenje){
-    if(this.trenutnaBrzina - smanjenje < 0){
-        return ` ne mozete smanjiti brzinu za tu vrednost`
-    }else{
-        this.trenutnaBrzina -=smanjenje
+// this ukazuje na razlicit objekat u zavisnosti od toga gde se koristi.
+
+// * U nekom objektu this ukazuje na taj objekat;
+//  * U global scope this ukazuje na global object.
+
+// Domaci:
+// Napraviti objekat student koji ce da ima vrednosti (po zelji), svojstava:
+// ime, prezime, broj indeksa, ocene (niz svih ocena koje student ima u
+// trenutnoj godini), prosekOcena (funckija koja na osnovu ocene vraca prosek
+// datih ocena).
+
+// Zad.
+// Write a JavaScript program which returns a subset of a string. Go to the editor
+// Sample Data: dog
+// Expected Output: ["d", "do", "dog", "o", "og", "g"]
+
+const subStr = (str) => {
+  const subStrArr = [];
+  for (let i = 0; i < str.length; i++) {
+    for (let k = i; k < str.length; k++) {
+      subStrArr.push(str.slice(i, k + 1));
     }
-}
-console.log(myCar.smanjenjeBrzine(40))
-console.log(myCar.smanjenjeBrzine(25))
-console.log(myCar)
-myCar.koci= function (){
-    this.trenutnaBrzina = 0
-}
-myCar.koci()
-console.log(myCar)
+  }
+  return subStrArr;
+};
+console.log(subStr("dog"));
+//
 ////
-// Domaci zadatak:
-// // Napraviti objekat sa sledecim svojstvima:
-// 1. firstName,
-// 2. lastName,
-// 3. language,
-// 4. setLanguage - metoda za setovanje jezika,
-// 5. setNickName - metoda (svaka osoba ima nadimak sastavljen od prva dva slova
-// imena i prva dva slova prezimena)
-
+//zz

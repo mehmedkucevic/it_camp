@@ -1,75 +1,32 @@
-// Objekti su glavna stvar u JavaScript_u.
+const prom1 = 55 // true
+const prom2 = !55 // false
+const prom3 = !!55 // true
 
-// const niz = ["Amer", "Bakir", "Aladin"]
-//              0        1        2
+const prom4 = !!true // true
+const prom5 = !"" // true
+const prom6 = !(55 + "") // false
 
-// Objekti su promenljive koje sadrze vise vrednosti.
-// Predstavljaju se u key:value parovima.
+console.log(prom1)
+console.log(prom2)
+console.log(prom3)
+console.log(prom4)
+console.log(prom5)
+console.log(prom6)
 
-const person = {
-  firstName: "Nikola",
-  lastName: "Bozovic",
-  age: 18,
-  adult: true,
-};
+// x = 15
+// let y = 16
 
-console.log(person);
-// Pristupanje odredjenim vrednostima objekta mozemo izvrsiti na 2 nacina:
-// Jedan key:value par se property (svojstvo).
+// console.log( x + y)
 
-// 1. objectName.propertyName (person.firstName)
+add(10,15)
 
-// 2. objectName["propertyName"]          (person["firstName"])
+function add(a,b){
+    console.log(a+b)
+}
 
-console.log(person.firstName);
-const punoletnost = person.adult === true ? "jeste" : "nije";
-console.log(`${person["firstName"]} ${punoletnost} punoletan.`);
+hello("Mehmede")
 
-// Object Methods //
-// Objekti takodje mogu imati metode.
-// Metode su funkcije koje ce se izvrsiti na objektu.
-// Metode su skladistene u svojstvima kao definicije funkcija.
-
-const person2 = {
-  firstName: "Alen",
-  lastName: "Muslic",
-  age: 17,
-  adult: false,
-  fullName: function () {
-    return `${this.firstName} ${this.lastName}`;
-  },
-};
-console.log(person2.fullName());
-
-// u JavaScriptu this je keyword (rezervisana rec) koja ukazuje na neki objekat.
-// this nije promenljiva i ne mozemo promeniti vrednost this.
-
-// this ukazuje na razlicit objekat u zavisnosti od toga gde se koristi.
-
-// * U nekom objektu this ukazuje na taj objekat;
-//  * U global scope this ukazuje na global object.
-
-// Domaci:
-// Napraviti objekat student koji ce da ima vrednosti (po zelji), svojstava:
-// ime, prezime, broj indeksa, ocene (niz svih ocena koje student ima u
-// trenutnoj godini), prosekOcena (funckija koja na osnovu ocene vraca prosek
-// datih ocena).
-
-// Zad.
-// Write a JavaScript program which returns a subset of a string. Go to the editor
-// Sample Data: dog
-// Expected Output: ["d", "do", "dog", "o", "og", "g"]
-
-const subStr = (str) => {
-  const subStrArr = [];
-  for (let i = 0; i < str.length; i++) {
-    for (let k = i; k < str.length; k++) {
-      subStrArr.push(str.slice(i, k + 1));
-    }
-  }
-  return subStrArr;
-};
-console.log(subStr("dog"));
-//
-////
-//zz
+const hello = (par )=>{
+console.log("Hello ${par} ")
+}
+// hoisting ne da da se nesto deklarise preko const i let

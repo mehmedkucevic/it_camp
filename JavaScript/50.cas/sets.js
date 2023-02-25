@@ -59,10 +59,10 @@ console.log(newArr2([1, 2, 3, 4, 4, 4, 5, 5, 2, 1]));
 // Mape pamte orginalni redosled elemenata.
 
 const myMap = new Map([
-    ["apple",60],
-    ["orange",198],
-])
-console.log(myMap)
+  ["apple", 60],
+  ["orange", 198],
+]);
+console.log(myMap);
 
 // Glavne metode kod Map-a :
 
@@ -71,46 +71,37 @@ console.log(myMap)
 // 2. Za setovanje vrednosti koristimo set()
 
 // Pravljenje novog key-value para
-myMap.set("strawberry", 240)
-console.log(myMap)
+myMap.set("strawberry", 240);
+console.log(myMap);
 
 // Izmena vrednosti za postojeci key
-myMap.set(false, 0)
-console.log(myMap)
+myMap.set(false, 0);
+console.log(myMap);
 
 // 3. get() metoda se koristi za  dobijanje vrednosti odredjenog kljuca
 
-console.log(myMap.get("apple"))
+console.log(myMap.get("apple"));
 
 // 4. delete() metoda se koristi za brisanje key-value para
 
-myMap.delete("orange")
-console.log(myMap)
+myMap.delete("orange");
+console.log(myMap);
 
 // 5. has() metoda proverava na osnovu kljuca da li je odredjeni key-value par prisutan u mapi
 
-console.log(myMap.has(true))
-console.log(myMap.has("pineapple"))
+console.log(myMap.has(true));
+console.log(myMap.has("pineapple"));
 
 // 6. forEach() metoda nam sluzi za iteraciju kroz mapu
 
-myMap.forEach((el)=> console.log(el))
+myMap.forEach((el) => console.log(el));
 
 // 7. entries() metoda
 
-// 8. 
+// 8.
 
-
-
-
-
-
-
-
-
-
-function events(map){
-const events = [...new Set(map.values())]
-return entries
+function events(map) {
+  const events = [...new Set(map.values())];
+  return entries;
 }
-console.log(events)
+console.log(events);

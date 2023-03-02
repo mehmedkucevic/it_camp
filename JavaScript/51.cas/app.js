@@ -1,14 +1,30 @@
+// First way
 function max(arr) {
   for (i = 0; i < arr.length; i++) {
-    for (i = k + 1; k < arr.length; k++) {
-      if (niz[i] > niz[k]) {
-        pom = niz[k];
-        niz[k] = niz[i];
-        niz[i] = pom;
+    for (k = i + 1; k < arr.length; k++) {
+      if (arr[i] > arr[k]) {
+        pom = arr[k];
+        arr[k] = arr[i];
+        arr[i] = pom;
       }
     }
   }
-  console.log(max);
+  console.log(arr);
 }
+max(["mesha", "a", "as", "asd"]);
 
-max([]);
+// Second way
+
+const sortArray = (sampleArray) => {
+  sampleArray.sort((first, second) => {
+    return first.length - second.length;
+  });
+};
+
+const arr = ["Telescopes", "Glasses", "Eyes", "Monocles"];
+sortArray(arr);
+console.log(arr);
+
+
+
+

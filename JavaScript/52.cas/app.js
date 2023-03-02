@@ -1,34 +1,84 @@
-// Domaci:
-// 1.
-// Don't give me five!
-// In this kata you get the start number and the end number of a region and should return the count of all numbers except numbers with a 5 in it. The start and the end number are both inclusive!
+// function User (name,lastname){
+//     this.name = name
+//     this.lastname = lastname
+// }
 
-// Examples:
+// const m = new User("mesha","asd")
+// console.log(m)
 
-// 1,9 -> 1,2,3,4,6,7,8,9 -> Result 8
-// 4,17 -> 4,6,7,8,9,10,11,12,13,14,16,17 -> Result 12
+// class Person {
+//   //   name;
+//   //   lastname;
+//   //   age;
 
-// 2.
-// Write a function that can return the smallest value of an array or the index of that value. The function's 2nd parameter will tell whether it should return the value or the index.
+//   constructor(name, lastname, nAge) {
+//     this.age = nAge;
+//     this.name = name;
+//     this.lastname = lastname;
+//   }
 
-// Assume the first parameter will always be an array filled with at least 1 number and no duplicates. Assume the second parameter will be a string holding one of two values: 'value' and 'index'.
+//   imeIPrezime() {
+//     return `${this.name} ${this.lastname}`;
+//   }
+// }
 
-// min([1,2,3,4,5], 'value') // => 1
-// min([1,2,3,4,5], 'index') // => 0
+// const person1 = new Person("mesha", "k", 15);
+// console.log(person1);
+// console.log(person1.imeIPrezime());
 
-// I
+// class Product {
+//   static IncreaseForTen = 1.1;
+//   constructor(name, price, desc, weight) {
+//     this.name = name;
+//     this.price = price;
+//     this.description = desc;
+//     this.weight = weight;
+//   }
+//   static increasePrice() {
+//     console.log(
+//       `This method will increase price for our product fot 10% multiplaying current price by ${this.IncreaseForTen}`
+//     );
+//   }
+// }
 
-function notFive(start, end) {
-  let count = 0;
-  for (let i = start; i <= end; i++) {
-    if (i.toString().includes("5")) {
-      continue;
+// const socks = new Product("white sock", 120, "100% cotton", 50);
+// console.log(socks);
+// // ne mozemo pristupiti statickoj metodi iz objekta, vec samo direktno preko klase
+// // console.log(socks.increasePrice())
+// console.log(Product.IncreaseForTen);
+// console.log(Product.increasePrice);
+
+
+class Person {
+    constructor(name,lastname,gender,age){
+        this.name = name
+        this.lastname = lastname
+        this.gender = gender
+        this.age = age
     }
-    count++;
-  }
-  return count;
+getInfo(){
+    console.log(`${this.name} ${this.lastname} ima ${age}`)
 }
-console.log(notFive(8, 10));
+}
+const person= new Person ("mesha", "k","M",98234)
+console.log(person)
 
-// II
+class Student extends Person{
+    constructor(
+        name,
+        lastname,
+        gender,
+        age,
+        indexNum,
+        studyYear,
+        AC,
+    )
+    {
+        super(name,lastname,gender,age)
+    }
+}
+
+const student = new Student ("amer" , "honic","M",19,123331,1,7.77)
+
+
 

@@ -15,3 +15,20 @@
 
 // min([1,2,3,4,5], 'value') // => 1
 // min([1,2,3,4,5], 'index') // => 0
+
+// I
+
+function notFive(start, end) {
+  let count = 0;
+  for (let i = start; i <= end; i++) {
+    if (i.toString().includes("5")) {
+      continue;
+    }
+    count++;
+  }
+  return count;
+}
+console.log(notFive(8, 10));
+
+// II
+

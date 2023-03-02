@@ -1,4 +1,4 @@
-// I
+
 
 function isString (txt){
     const str = txt.toString()
@@ -11,5 +11,3 @@ return "Poslati argument nije string"
 console.log(isString(12))
 console.log(isString("string"))
 console.log(isString([1,2,"secer"]))
-
-// II

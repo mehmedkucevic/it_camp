@@ -22,11 +22,15 @@ header input{
     border-radius: 10px;
 }
 .main ul{
-    
+    margin: 15px;
     list-style-type: none;
+    margin-top: 1rem;
+    border: solid 1px #aaaaaa;
+    border-radius: 7px;
 }
 .main li{
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .main button{
     border-radius: 4px;
@@ -34,10 +38,11 @@ header input{
     background-color: red;
     border: none;
     display: flex;
-    position: relative;
-    left: 550px;
-    top: -150px;
-    margin-bottom: 20px;
+    position:relative;
+    left: 90vw;
+    top: -26.6vh;
+    margin-bottom: 23px;
+    margin-right: 50px;
 }
 .main button:hover{
     background-color: #e6a4a4;
@@ -48,6 +53,7 @@ header input{
     border:none;
     border-radius: 4px;
     width: 60px;
+    height: 30px;
     padding: 3px;
 }
 #main h1{
@@ -55,6 +61,7 @@ header input{
     color: #494949;
 }
 #main input{
+    height: 30px;
     margin-left: 1.6rem;
     border-radius: 8px;
     border: solid 0.5px #aaaaaa;

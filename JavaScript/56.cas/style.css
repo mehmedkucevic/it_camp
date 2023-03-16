@@ -1,1 +1,36 @@
-header{}
+*{
+    margin: 0;
+box-sizing: border-box;
+}
+header{
+    display: flex;
+justify-content: space-between;
+padding: 1rem;
+padding-right:6rem;
+padding-left:6rem;
+background:#5cdf10;
+}
+header h1{
+    color: #ffffff;
+}
+header input{
+ margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 100px;
+    border: none;
+    border-radius: 3px;
+}
+.main ul{
+    
+    list-style-type: none;
+}
+.main li{
+    margin-bottom: 20px;
+}
+.main button{
+    display: flex;
+    position: relative;
+    left: 550px;
+    top: -150px;
+    margin-bottom: 20px;
+}

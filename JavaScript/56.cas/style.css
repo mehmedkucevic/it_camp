@@ -1,6 +1,7 @@
 *{
     margin: 0;
 box-sizing: border-box;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 header{
     display: flex;
@@ -18,7 +19,7 @@ header input{
     padding-left: 10px;
     padding-right: 100px;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 .main ul{
     
@@ -28,9 +29,36 @@ header input{
     margin-bottom: 20px;
 }
 .main button{
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: red;
+    border: none;
     display: flex;
     position: relative;
     left: 550px;
     top: -150px;
     margin-bottom: 20px;
+}
+.main button:hover{
+    background-color: #e6a4a4;
+}
+#main button{
+    color: #ffffff;
+    background-color: #616161;
+    border:none;
+    border-radius: 4px;
+    width: 60px;
+    padding: 3px;
+}
+#main h1{
+    margin-left: 2rem;
+    color: #494949;
+}
+#main input{
+    margin-left: 1.6rem;
+    border-radius: 8px;
+    border: solid 0.5px #aaaaaa;
+}
+#main button:hover{
+    background-color: #aaaaaa;
 }

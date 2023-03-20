@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #242424;
+}
+.main {
+    padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  height: 400px;
+  background-color: antiquewhite;
+}
+.icon {
+  margin:auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  background: #ffffff;
+  border-radius: 100%;
+}

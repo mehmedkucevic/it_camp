@@ -24,14 +24,11 @@ button.addEventListener("click", function () {
     return arrZavrseni;
   }
 });
+
 let form = document.querySelector("form");
 
-// form.addEventListener("submit", function (event) {
-//   event.preventDefault();
-// });
-
-const  select = document.querySelector(".options")
-console.log(select)
-const options = select.children
-console.log(options)
-Array.from(options).forEach((option)=> console.log(option.value))
+const select = document.querySelector(".options");
+console.log(select);
+const options = select.children;
+console.log(options);
+Array.from(options).forEach((option) => console.log(option.value));

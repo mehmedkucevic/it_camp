@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <script defer src="./app.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
-    
+    <h1>Guess my Number</h1>
+    <p>Guess a number between 1 and 20:</p>
+    <input type="number" id="guess" min="1" max="20">
+    <button id="guessButton">Guess</button>
+    <p id="message"></p>
+    <p>Score: <span id="score">20</span></p>
+    <p>High Score: <span id="highScore">0</span></p>
+    <button id="restartButton">Try Again</button>
+
 </body>
 </html>

@@ -1,0 +1,96 @@
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    margin-top: 1rem;
+  }
+  
+  body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #585858;
+    color: #fff;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  input {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: rgb(122, 14, 245);
+    text-align: center;
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff8000;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #dce73a;
+  }
+  
+  #message {
+    font-size: 24px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #score,
+  #highScore {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  #score {
+    margin-right: 20px;
+  }
+  
+  #restartButton {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  #restartButton:hover {
+    background-color: rgb(131, 58, 58);
+  }
+  
+  

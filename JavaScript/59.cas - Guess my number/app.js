@@ -25,6 +25,8 @@ const resetGame = function () {
   displayMessage("Guess a number between 1 and 20");
   displayScore(score);
   document.getElementById("guess").value = "";
+  document.querySelector("body").style.backgroundColor = "#585858";
+
 };
 // kod koji je napisan ispod se desava kada se klikne button Guess
 document.getElementById("guessButton").addEventListener("click", function () { 
@@ -40,7 +42,7 @@ document.getElementById("guessButton").addEventListener("click", function () {
 
     // azuriranje HighScora
     if (score > highScore) {
-      highScore = score;
+      highScore++
       displayHighScore(highScore);
     }
   } 
